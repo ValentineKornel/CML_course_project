@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ord_styles.css">
+    <title>Delote-Beautu.Ordering</title>
+</head>
+<header class="header-1">
+
+    <div class="wrapper">
+        <div class="header-burger">
+            <span class="burger-line line1"></span>
+            <span class="burger-line line2"></span>
+            <span class="burger-line line3"></span>
+        </div>
+        <nav class="header-nav">
+
+            <ul>
+
+                <li class="header-item">
+                    <a href="https://github.com/ValentineKornel" class="header-link js-scroll">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+                            <image xlink:href="./img/ig_icon.svg"/>
+                        </svg>
+
+
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="homepage.html"
+                       class="header-link js-scroll">
+                        Главная
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="masters.html" class="header-link js-scroll">
+                        Мастера
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="homepage.html#works" class="header-link">
+                        Наши работы
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="#leist" class="header-link js-scroll">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <image xlink:href="./img/nav_icon.svg"/>
+                          </svg>
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="services.html" class="header-link js-scroll">
+                        Услуги
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="ordering.html" class="header-link">
+                        Запись на процедуры
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="#!" class="header-link js-scroll kont-item">
+                        Контакты
+                    </a>
+                </li>
+
+            </ul>
+            <div class="nav-close">
+                <span class="line-close"></span>
+                <span class="line-close"></span>
+            </div>
+        </nav>
+    
+    </div>
+
+
+    <div class="header-kontakt">
+        <div class="head-close">
+            <span class="head-line-close"></span>
+            <span class="head-line-close"></span>
+        </div>
+        <p class="kont-desc">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Ipsum, adipiscing <br> amet
+            in egestas sem dui, arcu
+            <br> faucibus scelerisque. Nisl est felis id volutpat. <br> Sed dolor fermentum <br> amet lectus nibh quis.
+            Tortor donec
+            <br> pellentesque leo ac placerat. Morbi.</p>
+        <div class="footer-kontakts">
+            <h3>Контакты</h3>
+            <p><a href="tel:+375257503053">+375 (25) 750-30-53</a></p>
+                <p><a href="tel:+33757503053">+375 (44) 551-48-85</a></p>
+                <p>Проспект победителей, <br> дом 127.</p>
+
+
+        </div>
+        <div class="betriebsart">
+            <h3>Режим работы</h3>
+            <p>C 10:00 до 21:00 (Пн-Пт)</p>
+            <p>С 11:00 до 20:00 (Сб-Вс)</p>
+        </div>
+    </div>
+</header>
+<body style="background: url('./img/header-bg.jpg') fixed center; background-size: cover; width: 101vw;">
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text\css" href="./css/style.css"?>
+<popup class="popup" id="popup" style="display: none;">
+    <massage class="popup-message">
+        <thank style="display: block; margin-bottom: 10px; text-align: center;">
+            Спасибо что вы решили записаться к нам!
+        </thank>
+        <text>
+            Ждем вас в нашем салоне красоты. Если вы решите изменить свой заказ или отменить его,<br>
+            позвоните пожалуйста по телефону указанному в контактной информации
+        </text>
+        <button style="display:block;" type="button" id="close-button">Закрыть</button>
+    </massage>
+</popup>
+    <div class="login-box">
+        <h2>Оформите вашу запись</h2>
+        <form id="myForm">
+            <div class="user-box">
+                <input type="text" required oninvalid="this.setCustomValidity('Эта информация обязательна для ввода')" oninput="this.setCustomValidity('')">
+                <label>ФИО</label>
+            </div>
+            <div class="user-box">
+                <input type="text" required oninvalid="this.setCustomValidity('Эта информация обязательна для ввода')" oninput="this.setCustomValidity('')">
+                <label>Процедура</label>
+            </div>
+            <div class="user-box">
+                <input type="date" required oninvalid="this.setCustomValidity('Эта информация обязательна для ввода')" oninput="this.setCustomValidity('')">
+                <label>Дата</label>
+            </div>
+            <div class="user-box">
+                <input type="tel" placeholder="+375XXXXXXXXX" required pattern="\+375[0-9]{9}" oninvalid="this.setCustomValidity('Введите корректный номер телефона: +375XXXXXXXXX')" oninput="this.setCustomValidity('')">
+                <label>Телефон</label>
+            </div>
+            <a href="#" id="submit-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Записаться
+            </a>
+            <button style="display: none;" type="submit" id="submit-form"></button>
+        </form>
+    </div>
+
+<footer>
+    <div class="wrapper">
+        <div class="footer-nav">
+            <div class="footer-logo">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <image xlink:href="./img/footer_logo.svg"/>
+                </svg>
+
+            </div>
+            <div class="footer-kontakts">
+                <h3>Контакты</h3>
+                <p><a href="tel:+375257503053">+375 (25) 750-30-53</a></p>
+                <p><a href="tel:+33757503053">+375 (44) 551-48-85</a></p>
+                <p>Проспект победителей, <br> дом 127.</p>
+
+
+            </div>
+            <div class="betriebsart">
+                <h3>Режим работы</h3>
+                <p>C 10:00 до 21:00 (Пн-Пт)</p>
+                <p>С 11:00 до 20:00 (Сб-Вс)</p>
+            </div>
+            <div class="insta">
+                <h3>Мы в Instagram</h3>
+                <a href="https://github.com/ValentineKornel">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <image xlink:href="./img/ig_icon.svg"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <p class="my-github">
+            <a href="https://github.com/ValentineKornel">github.com/ValentienKornel</a>
+        </p>
+
+    </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/ordering.js"></script>
+</body>
+</html>
