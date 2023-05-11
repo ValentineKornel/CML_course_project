@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text\css" href="style.css"?>
+<popup class="popup" id="popup" style="display: none;">
+    <massage class="popup-message">
+        <thank style="display: block; margin-bottom: 10px; text-align: center;">
+            Спасибо что вы решили записаться к нам!
+        </thank>
+        <text>
+            Ждем вас в нашем салоне красоты. Если вы решите изменить свой заказ или отменить его,<br>
+            позвоните пожалуйста по телефону указанному в контактной информации
+        </text>
+        <button style="display:block;" type="button" id="close-button">Закрыть</button>
+    </massage>
+</popup>
